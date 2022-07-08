@@ -1,0 +1,121 @@
+{% extends 'templates.html' %}
+{% load static %}
+{% block content %}
+<div class="header p20">
+    <div class="container">
+        <div class="font-24 bold">Chrono Inteligence</div>
+    </div>
+</div>
+<div class="menu p20">
+    <div class="container">
+        <a class="font-16" href="{% url "CustomerPage" %}">HOME</a>
+        <a class="font-16 pl16" href="{% url "Feedback" %}">FEEDBACK</a>
+        <a class="font-16 pl16" href="{% url "Summary" %}">RECEIPT</a>
+    </div>
+</div>
+<div class="container">
+<form action = "/Summary/" method = "post">
+    {%csrf_token%}
+    <div class="cus_info font-16 pt40 bold ">CUSTOMER INFO</div>
+    <div class="cus_details font-14 pt8 pb16">Fill out this form to start buying on the shop!</div>
+    <div class="user-info pt16 pb16">
+            <input type="text" name="lastname" class="text-box" placeholder="LAST NAME" required>
+            <input type="text" name="firstname" class="text-box" placeholder="FIRST NAME" required> 
+            <input type="text" name="middlename" class="text-box" placeholder="MIDDLE INITIAL" required>  
+            <input type="text" name="address" class="text-box" placeholder="ADRESS" required>
+            <input type="email" name="email" class="text-box" placeholder="E-MAIL" required>
+            <input type="tel" name="contact" class="text-box" placeholder="CONTACT NUMBER" required/>
+
+            <div class="banner pt16">
+    <div class="container">
+        <div class="flash_deals font-24 bold text-center text-yellow">FLASH DEALS!</div>
+    </div>
+</div>
+</div> 
+<br>
+<div class="Arrangebx">
+<div class="row">
+<div class="column">
+<div class="box1">
+    <img class="imahe1"src="{% static "img/Backpacks.png"%}" alt="sampic" >
+    <div class="overlay"> <a href="Chrono_Break Innovation1.html">
+    <div class="text1">Chrono T-Shirts</div></a>
+</div>
+</div></div>
+<div class="row">
+<div class="column">
+<div class="box1">
+    <img class="imahe1"src="{% static "img/Caps.png"%}" alt="sampic" >
+    <div class="overlay"> <a href="Chrono_Break Culture1.html">
+    <div class="text1">Chrono Backpacks</div></a>
+</div>
+</div></div>
+<div class="row">
+<div class="column">
+<div class="box1">
+    <img class="imahe1" src="{% static "img/T-shirts.png"%}" alt="sampic" >
+    <div class="overlay"> <a href="Chrono_Break Health.html">
+    <div class="text1">Chrono Caps</div></a>
+</div>
+</div></div>
+<div class="row">
+<div class="column">
+<div class="box1">
+    <img class="imahe1"src="{% static "img/Case.png"%}" alt="sampic" >
+    <div class="overlay"> <a href="Chrono_Break Science.html">
+    <div class="text1">Chrono Case</div></a>
+</div>
+</div></div>
+</div>
+<div>
+<div class="container">
+<br><br><br><br><br><br>
+    <div>
+    <div class="container">
+        <div class="tran_sact font-16 pt40 bold ">TRANSACTION</div>
+        <div class="pay_method font-14 pt8 pb16">To pay for your product choose your transaction method</div>
+
+        <div class="user-info pt16 pb16">
+                <select name="product" class="topic-select" placeholder="CHOOSE YOUR PRODUCT:"required>
+                            <option>CHOOSE YOUR PRODUCT:</option>
+                            <option value="CHRONO T-SHIRTS">CHRONO T-SHIRTS</option>
+                            <option value="CHRONO BACKPACKS">CHRONO BACKPACKS</option>
+                            <option value="CHRONO CAPS">CHRONO CAPS</option>
+                            <option value="CHRONO CASE">CHRONO CASE</option>
+                        </select>
+                <select name="color" class="topic-select" placeholder="COLOR:"required>
+                            <option>COLOR:</option>
+                            <option value="BLACK">BLACK</option>
+                            <option value="BLUE">BLUE</option>
+                            <option value="RED">RED</option>
+                            <option value="WHITE">WHITE</option>
+                        </select>
+                <select name="quantity" class="topic-select" placeholder="QUANTITY:"required>
+                            <option>QUANTITY:</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                <select name="price" class="topic-select" placeholder="PRICE LIST:"required>
+                            <option>CHOOSE YOUR PRODUCT:</option>
+                            <option value="CHRONO T-SHIRTS - 100">CHRONO T-SHIRTS - 100</option>
+                            <option value="CHRONO BACKPACKS - 500">CHRONO BACKPACKS - 500</option>
+                            <option value="CHRONO CAPS - 100">CHRONO CAPS - 100</option>
+                            <option value="CHRONO CASE - 150">CHRONO CASE - 150</option>                        
+                        </select>
+                <input type="text" name="tprice" class="text-box" placeholder="TOTAL PRICE" required>
+                <select name="pay" class="topic-select" placeholder="PLEASE SELECT YOUR PAYMENT METHOD:"required>
+                            <option>PLEASE SELECT YOUR PAYMENT METHOD:</option>
+                            <option value="BANK TRANSFER">BANK TRANSFER</option>
+                            <option value="CREDIT CARD">CREDIT CARD</option>
+                            <option value="G-CASH">G-CASH</option>
+                            <option value="COD">COD</option>
+                        </select>
+                <input type="submit" name="submit" class="btn-primary mt16" value="SUBMIT"/>
+                <div>
+    </div></div></div></form>
+    </div></div></div></div>
+    </div></form></div></div>
+{% endblock %}

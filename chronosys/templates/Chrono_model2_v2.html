@@ -1,0 +1,90 @@
+{% extends 'templates.html' %}
+
+{% block content %}
+<div class="header p20">
+  <div class="container">
+      <div class="font-24 bold">Chrono Inteligence</div>
+  </div>
+</div>
+<div class="menu p20">
+  <div class="container">
+      <a class="font-16" href="{% url "CustomerPage" %}">HOME</a>
+      <a class="font-16 pl16" href="{% url "Feedback" %}">FEEDBACK</a>
+      <a class="font-16 pl16" href="{% url "Summary" %}">RECEIPT</a>
+  </div>
+</div>
+<title>CHRONO INTELLIGENCE</title>
+<style>
+  table, th, td {
+  border-bottom: 3px solid black;
+  }
+</style> 
+<div center>
+    <h1>CUSTOMER INFO</h1>
+    <table style="width:100%">
+    <table class="content-table" >
+      <thead>
+          <th>Last Name</th>
+          <th>First Name</th>
+          <th>Middle Initial</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Contact Number</th>
+          <th>Product</th>
+          <th>Color</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total Price</th>
+          <th>Payment Method</th>
+          <th>Action</th>
+        </tr>
+
+      </thead>
+
+
+        <tbody>
+          <tr>
+            {%for item in Chrono_all%}
+            <td>{{item.customer_lastname}}</td>
+            <td>{{item.customer_firstname}}</td>
+            <td>{{item.customer_middleint}}</td>
+            <td>{{item.customer_address}} </td>
+            <td>{{item.customer_email}} </td>
+            <td>{{item.customer_contact}}</td>
+            <td>{{item.customer_product}}</td>
+            <td>{{item.customer_color}}</td>
+            <td>{{item.customer_quantity}}</td>
+            <td>{{item.customer_price}}</td>
+            <td>{{item.customer_tprice}}</td>
+            <td>{{item.customer_paymethod}}</td>
+            <td>
+              <a type='button' href="{% url 'edit' item.pk%}" > Edit </a> <a  type='button' href="{% url 'delete' item.pk %}" > Delete</a>
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+      <br><br><br><br><br>
+    <table>
+      <thead>
+          <th>Topic</th>
+          <th>Message</th>
+          <th>Action</th>
+        </tr>
+
+      </thead>
+      {%for item in Chrono_feedback%}
+        <tbody>
+          <tr>
+            <td>{{item.customer_topic}}</td>
+            <td>{{item.customer_message}}</td>
+            <td>
+              <a  type='button' href="{% url 'Delete1' item.pk %}" > Delete</a>
+            </td> 
+          </tr>
+
+      {%endfor%}
+      </tbody>
+    </table>
+</div>
+{% endblock %}

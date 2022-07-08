@@ -1,0 +1,41 @@
+{% extends 'templates.html' %}
+{% load static %}
+{% block content %}
+<div class="header p20">
+    <div class="container">
+        <div class="font-24 bold">Chrono Inteligence</div>
+    </div>
+</div>
+<div class="menu p20">
+    <div class="container">
+        <a class="font-16" href="{% url "CustomerPage" %}">HOME</a>
+        <a class="font-16 pl16" href="{% url "Feedback" %}">FEEDBACK</a>
+        <a class="font-16 pl16" href="{% url "Summary" %}">RECEIPT</a>
+    </div>
+</div>
+                <div>
+    <div class="container">
+        <div class="feed_back font-16 pt40 bold ">FEEDBACK</div>
+        <div class="fback_form font-14 pt8 pb16">Fill out this form to send your feedback!</div>
+
+        <div class="contact-form">
+            <form action="/Feedback/" method="post">
+                {%csrf_token%}
+                        <select name="topic" class="topic-select" placeholder="PLEASE SELECT YOUR TOPIC:"required>
+                            <option>PLEASE SELECT YOUR TOPIC:</option>
+                            <option value="general">GENERAL INQUIRY</option>
+                            <option value="subscription">SUBSCRIPTION</option>
+                            <option value="advertise">ADVERTISE</option>
+                            <option value="comment">COMMENTS</option>
+                            <option value="feedback">FEEDBACKS</option>
+                        </select>
+                <textarea name="message" id="textbox" rows="5" placeholder="TYPE HERE..." required> </textarea>
+                    <br>
+                    <input type="reset" name="reset" class="btn-gray mr8 mt16" value="CLEAR"/> 
+                    <input type="submit" name="submit" class="btn-primary mt16" value="SUBMIT"/>
+        </form></div></div></div></form>
+    </div></div></div></form>
+    </div></div></div></div>
+    </div></form></div></div>
+
+{% endblock %}

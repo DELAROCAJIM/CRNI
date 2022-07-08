@@ -1,0 +1,597 @@
+body {
+    background-size: cover;
+    background-color: #fff;
+    font-family: 'Montserrat';
+    margin: 0px !important;
+    }
+ .user-info {
+        max-width: 700px; 
+        margin-right: 50px; 
+     }
+     .contact-info, .user-info {
+                flex: 1;
+     }
+     .user-info .text-box {
+        background: #fff; 
+        color: black; 
+        border: solid 1px #efefef; 
+        width: calc(50% - 10px); 
+        height: 20px; 
+        padding: 12px; 
+        font-size: 14px; 
+        font-family: 'Montserrat';
+        border-radius: 5px; 
+        margin-bottom: 10px; 
+        opacity: 10; 
+        width: 96.5%;
+      }
+    .user-info textarea {
+        background: ghostwhite; 
+        color: black; 
+        border: none; 
+        width: 96.5%; 
+        padding: 12px; 
+        font-size: 14px;
+        font-family: 'Monteserrat';
+        min-height: 200px; 
+        max-height: 400px; 
+        resize: vertical; 
+        border-radius: 5px; 
+        margin-bottom: 20px; 
+        opacity: 10;
+       
+     }
+    .font-24 {
+        font-size: 24px;
+    }
+    .font-16 {
+        font-size: 20px;
+    }
+    .font-12 {
+        font-size: 12px;
+    }
+    .font-14 {
+        font-size: 20px;
+    }
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .header {
+        background-color: #368DC8;
+        color: #fff;
+    }
+    .p40 {
+        padding: 40px;
+    }
+    .p20 {
+        padding: 20px;
+    }
+    .pt40{
+        padding-top: 40px;
+    }
+    .pt16{
+        padding-top: 16px;
+    }
+    .pt8{
+        padding-top: 8px;
+    }
+    .pb40{
+        padding-bottom: 40px;
+    }
+    .pb16{
+        padding-bottom: 16px;
+    }
+    .pb8{
+        padding-bottom: 8px;
+    }
+    .pl16 {
+        padding-left: 16px;
+    }
+    .mr8 {
+        margin-right: 8px;
+    }
+    .mt16 {
+        margin-top: 16px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .btn-primary {
+        background-color: #45A960;
+        font-size: 12px;
+        line-height: 24px;
+        color: #fff;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .btn-gray {
+        background-color: #efefef;
+        font-size: 12px;
+        line-height: 24px;
+        color: #000;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .menu {
+        background-color: #efefef;
+    }
+    .menu a {
+        color: #000;
+    }
+    .box1 {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  float: left;
+}
+.imahe1 {
+  width: 350px;
+  height: 300px;
+}
+.row {
+content: "";
+clear: both;
+display: table;
+}
+.column {
+float: left;
+width: 290px;
+padding: 50px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: royalblue;
+  overflow: hidden;
+  width: 350px;
+  height: 300px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.box1:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.text1 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  font-family: impact;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Arrangebx {
+    display: block;
+}
+.box {
+            margin-left: 3.1%;
+            margin-right: 3.4%;
+            border: 10px solid #ccc;
+            float: left;
+            width: 332px;
+            height: 232 px;
+        }
+        .box:hover{
+                border: 10px solid #777;
+        }
+
+        .box img {
+                width: 100%;
+        }
+
+        .description{
+                padding: 8px;
+                text-align: center;
+                color: #fffcf2;
+                font-family: tahoma;
+                font-weight: bold;
+                font-size: 20px;
+        }
+        img {
+            height: 332px;
+            width: 232px;
+        }
+.Arrange {
+    text-align: justify;
+}
+.button:hover {
+            color: lightyellow;
+        }
+.bullets {
+            font-family: impact;
+            padding-left: 38%;
+            float: left;
+            letter-spacing: 2px;
+            font-size: 20px;
+            text-align: center;
+        }
+    .font-24 {
+        font-size: 24px;
+    }
+    .font-16 {
+        font-size: 20px;
+    }
+    .font-12 {
+        font-size: 12px;
+    }
+    .font-14 {
+        font-size: 14px;
+    }
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .header {
+        background-color: #368DC8;
+        color: #fff;
+    }
+    .p40 {
+        padding: 40px;
+    }
+    .p20 {
+        padding: 20px;
+    }
+    .pt40{
+        padding-top: 40px;
+    }
+    .pt16{
+        padding-top: 16px;
+    }
+    .pt8{
+        padding-top: 8px;
+    }
+    .pb40{
+        padding-bottom: 40px;
+    }
+    .pb16{
+        padding-bottom: 16px;
+    }
+    .pb8{
+        padding-bottom: 8px;
+    }
+    .pl16 {
+        padding-left: 16px;
+    }
+    .mr8 {
+        margin-right: 8px;
+    }
+    .mt16 {
+        margin-top: 16px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .btn-primary {
+        background-color: #45A960;
+        font-size: 12px;
+        line-height: 24px;
+        color: #fff;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .btn-gray {
+        background-color: #efefef;
+        font-size: 12px;
+        line-height: 24px;
+        color: #000;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .menu {
+        background-color: #efefef;
+    }
+    .menu a {
+        color: #000;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .text-yellow {
+        color: royalblue;
+    }
+    .word {
+       padding-right:1.5%;
+       font-size:30px;
+       color:white;
+       font-family: tahoma;
+       text-align: center;
+       text-indent: 1.5em;
+    }
+ .contact-info, .user-info {
+            flex: 1;
+}
+     .user-info .text-box {
+        background: #fff; 
+        color: black; 
+        border: solid 1px #efefef; 
+        width: calc(50% - 10px); 
+        height: 20px; 
+        padding: 12px; 
+        font-size: 14px; 
+        font-family: 'Montserrat';
+        border-radius: 5px; 
+        margin-bottom: 10px; 
+        opacity: 10; 
+        width: 96.5%;
+      }
+    .user-info textarea {
+        background: ghostwhite; 
+        color: black; 
+        border: none; 
+        width: 96.5%; 
+        padding: 12px; 
+        font-size: 14px;
+        font-family: 'Monteserrat';
+        min-height: 200px; 
+        max-height: 400px; 
+        resize: vertical; 
+        border-radius: 5px; 
+        margin-bottom: 20px; 
+        opacity: 10;
+    
+     }
+    .font-24 {
+        font-size: 24px;
+    }
+    .font-16 {
+        font-size: 20px;
+    }
+    .font-12 {
+        font-size: 12px;
+    }
+    .font-14 {
+        font-size: 20px;
+    }
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .header {
+        background-color: #368DC8;
+        color: #fff;
+    }
+    .p40 {
+        padding: 40px;
+    }
+    .p20 {
+        padding: 20px;
+    }
+    .pt40{
+        padding-top: 40px;
+    }
+    .pt16{
+        padding-top: 16px;
+    }
+    .pt8{
+        padding-top: 8px;
+    }
+    .pb40{
+        padding-bottom: 40px;
+    }
+    .pb16{
+        padding-bottom: 16px;
+    }
+    .pb8{
+        padding-bottom: 8px;
+    }
+    .pl16 {
+        padding-left: 16px;
+    }
+    .mr8 {
+        margin-right: 8px;
+    }
+    .mt16 {
+        margin-top: 16px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .btn-primary {
+        background-color: #45A960;
+        font-size: 12px;
+        line-height: 24px;
+        color: #fff;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .btn-gray {
+        background-color: #efefef;
+        font-size: 12px;
+        line-height: 24px;
+        color: #000;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .menu {
+        background-color: #efefef;
+    }
+    .menu a {
+        color: #000;
+    }
+    .word {
+       padding-right:1.5%;
+       font-size:30px;
+       color:white;
+       font-family: tahoma;
+       text-align: center;
+       text-indent: 1.5em;
+    }
+.topic-select {
+    background: #fff; 
+    color: black; 
+    border: solid 1px #efefef;
+    width: calc(60% - 20px); 
+    height: 50px;  
+    padding: 12px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    opacity: 10; 
+    width: 100%; 
+  }
+ .contact-form {
+            max-width: 700px; 
+            margin-right: 50px; 
+ }
+ .contact-info, .contact-form {
+            flex: 1;
+ }
+ .contact-form .text-box {
+        background: #fff; 
+        color: black; 
+        border: solid 1px #efefef; 
+        width: calc(50% - 10px); 
+        height: 20px; 
+        padding: 12px; 
+        font-size: 14px; 
+        font-family: 'Montserrat';
+        border-radius: 5px; 
+        margin-bottom: 10px; 
+        opacity: 10; 
+        width: 96.5%;
+  }
+.contact-form textarea {
+        background: #fff; 
+        color: black; 
+        border: solid 1px #efefef;
+        width: 96.5%; 
+        padding: 12px; 
+        font-size: 14px;
+        font-family: 'Monteserrat';
+        min-height: 200px; 
+        max-height: 400px; 
+        resize: vertical; 
+        border-radius: 5px; 
+        margin-bottom: 20px; 
+        opacity: 10;
+        
+ }
+    .font-24 {
+        font-size: 24px;
+    }
+    .font-16 {
+        font-size: 20px;
+    }
+    .font-12 {
+        font-size: 12px;
+    }
+    .font-14 {
+        font-size: 20px;
+    }
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .header {
+        background-color: #368DC8;
+        color: #fff;
+    }
+    .p40 {
+        padding: 40px;
+    }
+    .p20 {
+        padding: 20px;
+    }
+    .pt40{
+        padding-top: 40px;
+    }
+    .pt16{
+        padding-top: 16px;
+    }
+    .pt8{
+        padding-top: 8px;
+    }
+    .pb40{
+        padding-bottom: 40px;
+    }
+    .pb16{
+        padding-bottom: 16px;
+    }
+    .pb8{
+        padding-bottom: 8px;
+    }
+    .pl16 {
+        padding-left: 16px;
+    }
+    .mr8 {
+        margin-right: 8px;
+    }
+    .mt16 {
+        margin-top: 16px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .btn-primary {
+        background-color: #45A960;
+        font-size: 12px;
+        line-height: 24px;
+        color: #fff;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .btn-gray {
+        background-color: #efefef;
+        font-size: 12px;
+        line-height: 24px;
+        color: #000;
+        border-radius: 22px;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+    .menu {
+        background-color: #efefef;
+    }
+    .menu a {
+        color: #000;
+    }

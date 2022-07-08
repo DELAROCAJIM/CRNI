@@ -1,0 +1,33 @@
+{% extends 'templates.html' %}
+{% load static %}
+{% block content %}
+<div class="menu p20">
+    <div class="container">
+        <a class="font-16" href="{% url "CustomerPage" %}">HOME</a>
+        <a class="font-16 pl16" href="{% url "Feedback" %}">FEEDBACK</a>
+        <a class="font-16 pl16" href="{% url "Summary" %}">RECEIPT</a>
+    </div>
+</div>
+<div class="About">
+    <p>Edit Information</p>
+</div>
+<form method="POST" action="">
+    {% csrf_token%} 
+<div>
+    <div>{{form.customer_lastname}}</div>
+    <div>{{form.customer_firstname}}</div>
+    <div>{{form.customer_middleint}}</div>
+    <div>{{form.customer_address}} </div>
+    <div>{{form.customer_email}} </div>
+    <div>{{form.customer_contact}}</div>
+    <div>{{form.customer_product}}</div>
+    <div>{{form.customer_color}}</div>
+    <div>{{form.customer_quantity}}</div>
+    <div>{{form.customer_price}}</div>
+    <div>{{form.customer_tprice}}</div>
+    <div>{{form.customer_paymethod}}</div>
+    <div>
+        <input type = "Submit" class="btn primary" ></input>
+    </div>
+</div>
+{% endblock %}
